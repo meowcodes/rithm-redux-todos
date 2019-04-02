@@ -6,6 +6,7 @@ function rootReducer(state = INITIAL_STATE, action) {
     switch (action.type) {
         case "ADD":
             let addATodo = [...state.todos, action.payload];
+            console.log({todos: addATodo});
             return { todos: addATodo };
 
         case "DELETE":
